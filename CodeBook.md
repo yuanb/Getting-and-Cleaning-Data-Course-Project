@@ -176,8 +176,92 @@ The result is written to 'dataset_tidy.csv' file as output.
     
 The dataset_tidy contains 180 rows and 81 columns.
 
-Thanks
 
+### Variables collected/transformed in the tidy dataset ###
+Time domain:
+
+Body Acceleration - X,Y,Z:
+
+"Time-BodyAcceleration-Mean-X","Time-BodyAcceleration-Mean-Y","Time-BodyAcceleration-Mean-Z",
+
+"Time-BodyAcceleration-StandardDeviation-X","Time-BodyAcceleration-StandardDeviation-Y","Time-BodyAcceleration-StandardDeviation-Z",
+
+Gravity Acceleration - X,Y,Z:
+
+"Time-GravityAcceleration-Mean-X","Time-GravityAcceleration-Mean-Y","Time-GravityAcceleration-Mean-Z",
+
+"Time-GravityAcceleration-StandardDeviation-X","Time-GravityAcceleration-StandardDeviation-Y","Time-GravityAcceleration-StandardDeviation-Z",
+
+Body Acceleration Jerk - X,Y,Z:
+
+"Time-BodyAcceleration-JerkMean-X","Time-BodyAcceleration-JerkMean-Y","Time-BodyAcceleration-JerkMean-Z",
+
+"Time-BodyAcceleration-JerkStandardDeviation-X","Time-BodyAcceleration-JerkStandardDeviation-Y","Time-BodyAcceleration-JerkStandardDeviation-Z",
+
+Body Gyroscope - X,Y,Z:
+
+"Time-BodyGyroscope-Mean-X","Time-BodyGyroscope-Mean-Y","Time-BodyGyroscope-Mean-Z",
+
+"Time-BodyGyroscope-StandardDeviation-X","Time-BodyGyroscope-StandardDeviation-Y","Time-BodyGyroscope-StandardDeviation-Z",
+
+Body Gyroscope Jerk - X,Y,Z:
+
+"Time-BodyGyroscope-JerkMean-X","Time-BodyGyroscope-JerkMean-Y","Time-BodyGyroscope-JerkMean-Z",
+
+"Time-BodyGyroscope-JerkStandardDeviation-X","Time-BodyGyroscope-JerkStandardDeviation-Y","Time-BodyGyroscope-JerkStandardDeviation-Z",
+
+Magnitude:
+
+"Time-BodyAcceleration-Magnitude-Mean","Time-BodyAcceleration-Magnitude-StandardDeviation",
+
+"Time-GravityAcceleration-Magnitude-Mean","Time-GravityAcceleration-Magnitude-StandardDeviation",
+
+"Time-BodyAcceleration-JerkMagnitude-Mean","Time-BodyAcceleration-JerkMagnitude-StandardDeviation",
+
+"Time-BodyGyroscope-Magnitude-Mean","Time-BodyGyroscope-Magnitude-StandardDeviation",
+
+"Time-BodyGyroscope-JerkMagnitude-Mean","Time-BodyGyroscope-JerkMagnitude-StandardDeviation"
+
+
+Frequency Domain:
+
+Body Acceleration - X,Y,Z:
+
+"FrequencyDomain-BodyAcceleration-Mean-X","FrequencyDomain-BodyAcceleration-Mean-Y","FrequencyDomain-BodyAcceleration-Mean-Z",
+
+"FrequencyDomain-BodyAcceleration-StandardDeviation-X","FrequencyDomain-BodyAcceleration-StandardDeviation-Y","FrequencyDomain-BodyAcceleration-StandardDeviation-Z",
+
+"FrequencyDomain-BodyAcceleration-MeanFrequency-X","FrequencyDomain-BodyAcceleration-MeanFrequency-Y","FrequencyDomain-BodyAcceleration-MeanFrequency-Z",
+
+"FrequencyDomain-BodyAcceleration-JerkMean-X","FrequencyDomain-BodyAcceleration-JerkMean-Y","FrequencyDomain-BodyAcceleration-JerkMean-Z",
+
+"FrequencyDomain-BodyAcceleration-JerkStandardDeviation-X","FrequencyDomain-BodyAcceleration-JerkStandardDeviation-Y","FrequencyDomain-BodyAcceleration-JerkStandardDeviation-Z",
+
+"FrequencyDomain-BodyAcceleration-JerkMeanFrequency-X","FrequencyDomain-BodyAcceleration-JerkMeanFrequency-Y","FrequencyDomain-BodyAcceleration-JerkMeanFrequency-Z",
+
+"FrequencyDomain-BodyGyroscope-Mean-X","FrequencyDomain-BodyGyroscope-Mean-Y","FrequencyDomain-BodyGyroscope-Mean-Z",
+
+Body Gyroscope - X,Y,Z:
+
+"FrequencyDomain-BodyGyroscope-StandardDeviation-X","FrequencyDomain-BodyGyroscope-StandardDeviation-Y","FrequencyDomain-BodyGyroscope-StandardDeviation-Z",
+
+"FrequencyDomain-BodyGyroscope-MeanFrequency-X","FrequencyDomain-BodyGyroscope-MeanFrequency-Y","FrequencyDomain-BodyGyroscope-MeanFrequency-Z",
+
+Magnitude:
+
+"FrequencyDomain-BodyAcceleration-Magnitude-Mean","FrequencyDomain-BodyAcceleration-Magnitude-StandardDeviation","FrequencyDomain-BodyAcceleration-Magnitude-MeanFrequency",
+
+"FrequencyDomain-BodyAcceleration-JerkMagnitude-Mean","FrequencyDomain-BodyAcceleration-JerkMagnitude-StandardDeviation","FrequencyDomain-BodyAcceleration-JerkMagnitude-MeanFrequency,
+
+"FrequencyDomain-BodyGyroscope-Magnitude-Mean","FrequencyDomain-BodyGyroscope-Magnitude-StandardDeviation","FrequencyDomain-BodyGyroscope-Magnitude-MeanFrequency",
+
+"FrequencyDomain-BodyGyroscope-JerkMagnitude-Mean","FrequencyDomain-BodyGyroscope-JerkMagnitude-StandardDeviation","FrequencyDomain-BodyGyroscope-JerkMagnitude-MeanFrequency"
+
+
+
+
+
+Thanks
 
 
 
