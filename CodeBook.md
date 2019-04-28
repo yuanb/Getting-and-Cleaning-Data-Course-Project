@@ -258,8 +258,6 @@ The structure of 'dataset_tidy' looks like:
 The result is written to 'dataset_tidy.csv' file as output.
 
     write.csv(dataset_tidy, './dataset_tidy.csv')
-    
-The dataset_tidy contains 180 rows and 81 columns.
 
 
 Thanks
