@@ -44,7 +44,7 @@ merged_dataset <- rbind(training_dataset,test_dataset)
 
 message('2. Extracts only the measurements on the mean and standard deviation for each measurement.')
 columns_mean_std <- colnames(merged_dataset)[grepl("mean|std",colnames(merged_dataset))]
-dataset_mean_std <-merged_dataset[,c('subject', 'activity', columns_mean_std)]
+dataset_mean_std <- merged_dataset[,c('subject', 'activity', columns_mean_std)]
 
 message('3. Uses descriptive activity names to name the activities in the data set.')
 activity_names <- read.table('./UCI HAR Dataset/activity_labels.txt', header = FALSE)
@@ -69,7 +69,7 @@ dataset_tidy <- aggregate(dataset_mean_std[,3:81], by=list(activity=dataset_mean
 #Swap column order : activity and subject
 dataset_tidy <- dataset_tidy[c(names(dataset_tidy[,2:1]), names(dataset_tidy[,3:81]))]
 
-write.csv(dataset_tidy, './dataset_tidy.csv')
+write.table(dataset_tidy, './dataset_tidy.txt', sep=',', row.names = FALSE)
 
 
 message('End of run_analysis.R.')
