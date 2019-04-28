@@ -1,16 +1,104 @@
-# CodeBook.md
-
-The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
-
-One of the most exciting areas in all of data science right now is wearable comput~ing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
-
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-
-Here are the data for the project:
-
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+## CodeBook.md ##
 
 Source code : run_analysis.R
+
+### Dataset description ###
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+### Activities ###
+
+    WALKING (1) - The subject performed walking in the test
+	WALKING_UPSTAIRS (2) - The subject performed up-stair walking in the test
+	WALKING_DOWNSTAIRS (3) - Down-stair walking
+	SITTING (4) - The subject was sitting in the test
+	STANDING (5) - Subject performed standing action in the test
+	LAYING (6) - The subject laid down in the test
+
+### Variables collected/transformed in the tidy dataset ###
+#### Time domain: ####
+
+##### Body Acceleration - X,Y,Z: #####
+
+"Time-BodyAcceleration-Mean-X","Time-BodyAcceleration-Mean-Y","Time-BodyAcceleration-Mean-Z",
+
+"Time-BodyAcceleration-StandardDeviation-X","Time-BodyAcceleration-StandardDeviation-Y","Time-BodyAcceleration-StandardDeviation-Z",
+
+##### Gravity Acceleration - X,Y,Z: #####
+
+"Time-GravityAcceleration-Mean-X","Time-GravityAcceleration-Mean-Y","Time-GravityAcceleration-Mean-Z",
+
+"Time-GravityAcceleration-StandardDeviation-X","Time-GravityAcceleration-StandardDeviation-Y","Time-GravityAcceleration-StandardDeviation-Z",
+
+##### Body Acceleration Jerk - X,Y,Z: #####
+
+"Time-BodyAcceleration-JerkMean-X","Time-BodyAcceleration-JerkMean-Y","Time-BodyAcceleration-JerkMean-Z",
+
+"Time-BodyAcceleration-JerkStandardDeviation-X","Time-BodyAcceleration-JerkStandardDeviation-Y","Time-BodyAcceleration-JerkStandardDeviation-Z",
+
+##### Body Gyroscope - X,Y,Z: #####
+
+"Time-BodyGyroscope-Mean-X","Time-BodyGyroscope-Mean-Y","Time-BodyGyroscope-Mean-Z",
+
+"Time-BodyGyroscope-StandardDeviation-X","Time-BodyGyroscope-StandardDeviation-Y","Time-BodyGyroscope-StandardDeviation-Z",
+
+##### Body Gyroscope Jerk - X,Y,Z: #####
+
+"Time-BodyGyroscope-JerkMean-X","Time-BodyGyroscope-JerkMean-Y","Time-BodyGyroscope-JerkMean-Z",
+
+"Time-BodyGyroscope-JerkStandardDeviation-X","Time-BodyGyroscope-JerkStandardDeviation-Y","Time-BodyGyroscope-JerkStandardDeviation-Z",
+
+##### Magnitude: #####
+
+"Time-BodyAcceleration-Magnitude-Mean","Time-BodyAcceleration-Magnitude-StandardDeviation",
+
+"Time-GravityAcceleration-Magnitude-Mean","Time-GravityAcceleration-Magnitude-StandardDeviation",
+
+"Time-BodyAcceleration-JerkMagnitude-Mean","Time-BodyAcceleration-JerkMagnitude-StandardDeviation",
+
+"Time-BodyGyroscope-Magnitude-Mean","Time-BodyGyroscope-Magnitude-StandardDeviation",
+
+"Time-BodyGyroscope-JerkMagnitude-Mean","Time-BodyGyroscope-JerkMagnitude-StandardDeviation"
+
+
+#### Frequency Domain: ####
+
+##### Body Acceleration - X,Y,Z: #####
+
+"FrequencyDomain-BodyAcceleration-Mean-X","FrequencyDomain-BodyAcceleration-Mean-Y","FrequencyDomain-BodyAcceleration-Mean-Z",
+
+"FrequencyDomain-BodyAcceleration-StandardDeviation-X","FrequencyDomain-BodyAcceleration-StandardDeviation-Y","FrequencyDomain-BodyAcceleration-StandardDeviation-Z",
+
+"FrequencyDomain-BodyAcceleration-MeanFrequency-X","FrequencyDomain-BodyAcceleration-MeanFrequency-Y","FrequencyDomain-BodyAcceleration-MeanFrequency-Z",
+
+"FrequencyDomain-BodyAcceleration-JerkMean-X","FrequencyDomain-BodyAcceleration-JerkMean-Y","FrequencyDomain-BodyAcceleration-JerkMean-Z",
+
+"FrequencyDomain-BodyAcceleration-JerkStandardDeviation-X","FrequencyDomain-BodyAcceleration-JerkStandardDeviation-Y","FrequencyDomain-BodyAcceleration-JerkStandardDeviation-Z",
+
+"FrequencyDomain-BodyAcceleration-JerkMeanFrequency-X","FrequencyDomain-BodyAcceleration-JerkMeanFrequency-Y","FrequencyDomain-BodyAcceleration-JerkMeanFrequency-Z",
+
+"FrequencyDomain-BodyGyroscope-Mean-X","FrequencyDomain-BodyGyroscope-Mean-Y","FrequencyDomain-BodyGyroscope-Mean-Z",
+
+##### Body Gyroscope - X,Y,Z: #####
+
+"FrequencyDomain-BodyGyroscope-StandardDeviation-X","FrequencyDomain-BodyGyroscope-StandardDeviation-Y","FrequencyDomain-BodyGyroscope-StandardDeviation-Z",
+
+"FrequencyDomain-BodyGyroscope-MeanFrequency-X","FrequencyDomain-BodyGyroscope-MeanFrequency-Y","FrequencyDomain-BodyGyroscope-MeanFrequency-Z",
+
+##### Magnitude: #####
+
+"FrequencyDomain-BodyAcceleration-Magnitude-Mean","FrequencyDomain-BodyAcceleration-Magnitude-StandardDeviation","FrequencyDomain-BodyAcceleration-Magnitude-MeanFrequency",
+
+"FrequencyDomain-BodyAcceleration-JerkMagnitude-Mean","FrequencyDomain-BodyAcceleration-JerkMagnitude-StandardDeviation","FrequencyDomain-BodyAcceleration-JerkMagnitude-MeanFrequency,
+
+"FrequencyDomain-BodyGyroscope-Magnitude-Mean","FrequencyDomain-BodyGyroscope-Magnitude-StandardDeviation","FrequencyDomain-BodyGyroscope-Magnitude-MeanFrequency",
+
+"FrequencyDomain-BodyGyroscope-JerkMagnitude-Mean","FrequencyDomain-BodyGyroscope-JerkMagnitude-StandardDeviation","FrequencyDomain-BodyGyroscope-JerkMagnitude-MeanFrequency"
+
+
+## The following are steps performed in run_analysis.R script ##
 
 ### Download dataset ###
 
@@ -175,90 +263,6 @@ The result is written to 'dataset_tidy.csv' file as output.
     write.csv(dataset_tidy, './dataset_tidy.csv')
     
 The dataset_tidy contains 180 rows and 81 columns.
-
-
-### Variables collected/transformed in the tidy dataset ###
-#### Time domain: ####
-
-##### Body Acceleration - X,Y,Z: #####
-
-"Time-BodyAcceleration-Mean-X","Time-BodyAcceleration-Mean-Y","Time-BodyAcceleration-Mean-Z",
-
-"Time-BodyAcceleration-StandardDeviation-X","Time-BodyAcceleration-StandardDeviation-Y","Time-BodyAcceleration-StandardDeviation-Z",
-
-##### Gravity Acceleration - X,Y,Z: #####
-
-"Time-GravityAcceleration-Mean-X","Time-GravityAcceleration-Mean-Y","Time-GravityAcceleration-Mean-Z",
-
-"Time-GravityAcceleration-StandardDeviation-X","Time-GravityAcceleration-StandardDeviation-Y","Time-GravityAcceleration-StandardDeviation-Z",
-
-##### Body Acceleration Jerk - X,Y,Z: #####
-
-"Time-BodyAcceleration-JerkMean-X","Time-BodyAcceleration-JerkMean-Y","Time-BodyAcceleration-JerkMean-Z",
-
-"Time-BodyAcceleration-JerkStandardDeviation-X","Time-BodyAcceleration-JerkStandardDeviation-Y","Time-BodyAcceleration-JerkStandardDeviation-Z",
-
-##### Body Gyroscope - X,Y,Z: #####
-
-"Time-BodyGyroscope-Mean-X","Time-BodyGyroscope-Mean-Y","Time-BodyGyroscope-Mean-Z",
-
-"Time-BodyGyroscope-StandardDeviation-X","Time-BodyGyroscope-StandardDeviation-Y","Time-BodyGyroscope-StandardDeviation-Z",
-
-##### Body Gyroscope Jerk - X,Y,Z: #####
-
-"Time-BodyGyroscope-JerkMean-X","Time-BodyGyroscope-JerkMean-Y","Time-BodyGyroscope-JerkMean-Z",
-
-"Time-BodyGyroscope-JerkStandardDeviation-X","Time-BodyGyroscope-JerkStandardDeviation-Y","Time-BodyGyroscope-JerkStandardDeviation-Z",
-
-##### Magnitude: #####
-
-"Time-BodyAcceleration-Magnitude-Mean","Time-BodyAcceleration-Magnitude-StandardDeviation",
-
-"Time-GravityAcceleration-Magnitude-Mean","Time-GravityAcceleration-Magnitude-StandardDeviation",
-
-"Time-BodyAcceleration-JerkMagnitude-Mean","Time-BodyAcceleration-JerkMagnitude-StandardDeviation",
-
-"Time-BodyGyroscope-Magnitude-Mean","Time-BodyGyroscope-Magnitude-StandardDeviation",
-
-"Time-BodyGyroscope-JerkMagnitude-Mean","Time-BodyGyroscope-JerkMagnitude-StandardDeviation"
-
-
-#### Frequency Domain: ####
-
-##### Body Acceleration - X,Y,Z: #####
-
-"FrequencyDomain-BodyAcceleration-Mean-X","FrequencyDomain-BodyAcceleration-Mean-Y","FrequencyDomain-BodyAcceleration-Mean-Z",
-
-"FrequencyDomain-BodyAcceleration-StandardDeviation-X","FrequencyDomain-BodyAcceleration-StandardDeviation-Y","FrequencyDomain-BodyAcceleration-StandardDeviation-Z",
-
-"FrequencyDomain-BodyAcceleration-MeanFrequency-X","FrequencyDomain-BodyAcceleration-MeanFrequency-Y","FrequencyDomain-BodyAcceleration-MeanFrequency-Z",
-
-"FrequencyDomain-BodyAcceleration-JerkMean-X","FrequencyDomain-BodyAcceleration-JerkMean-Y","FrequencyDomain-BodyAcceleration-JerkMean-Z",
-
-"FrequencyDomain-BodyAcceleration-JerkStandardDeviation-X","FrequencyDomain-BodyAcceleration-JerkStandardDeviation-Y","FrequencyDomain-BodyAcceleration-JerkStandardDeviation-Z",
-
-"FrequencyDomain-BodyAcceleration-JerkMeanFrequency-X","FrequencyDomain-BodyAcceleration-JerkMeanFrequency-Y","FrequencyDomain-BodyAcceleration-JerkMeanFrequency-Z",
-
-"FrequencyDomain-BodyGyroscope-Mean-X","FrequencyDomain-BodyGyroscope-Mean-Y","FrequencyDomain-BodyGyroscope-Mean-Z",
-
-##### Body Gyroscope - X,Y,Z: #####
-
-"FrequencyDomain-BodyGyroscope-StandardDeviation-X","FrequencyDomain-BodyGyroscope-StandardDeviation-Y","FrequencyDomain-BodyGyroscope-StandardDeviation-Z",
-
-"FrequencyDomain-BodyGyroscope-MeanFrequency-X","FrequencyDomain-BodyGyroscope-MeanFrequency-Y","FrequencyDomain-BodyGyroscope-MeanFrequency-Z",
-
-##### Magnitude: #####
-
-"FrequencyDomain-BodyAcceleration-Magnitude-Mean","FrequencyDomain-BodyAcceleration-Magnitude-StandardDeviation","FrequencyDomain-BodyAcceleration-Magnitude-MeanFrequency",
-
-"FrequencyDomain-BodyAcceleration-JerkMagnitude-Mean","FrequencyDomain-BodyAcceleration-JerkMagnitude-StandardDeviation","FrequencyDomain-BodyAcceleration-JerkMagnitude-MeanFrequency,
-
-"FrequencyDomain-BodyGyroscope-Magnitude-Mean","FrequencyDomain-BodyGyroscope-Magnitude-StandardDeviation","FrequencyDomain-BodyGyroscope-Magnitude-MeanFrequency",
-
-"FrequencyDomain-BodyGyroscope-JerkMagnitude-Mean","FrequencyDomain-BodyGyroscope-JerkMagnitude-StandardDeviation","FrequencyDomain-BodyGyroscope-JerkMagnitude-MeanFrequency"
-
-
-
 
 
 Thanks
