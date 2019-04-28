@@ -43,7 +43,7 @@ test_dataset <- cbind(subject_test, y_test, x_test)
 merged_dataset <- rbind(training_dataset,test_dataset)
 
 message('2. Extracts only the measurements on the mean and standard deviation for each measurement.')
-columns_mean_std <- colnames(merged_dataset)[grepl("mean|std",colnames(merged_dataset))]
+columns_mean_std <- colnames(merged_dataset)[grep("mean[(]|std[(]",colnames(merged_dataset))]
 dataset_mean_std <- merged_dataset[,c('subject', 'activity', columns_mean_std)]
 
 message('3. Uses descriptive activity names to name the activities in the data set.')
@@ -57,7 +57,6 @@ names(dataset_mean_std) <- gsub("^f", "FrequencyDomain-", names(dataset_mean_std
 names(dataset_mean_std) <- gsub('Acc', 'Acceleration-', names(dataset_mean_std))
 names(dataset_mean_std) <- gsub('Gyro', 'Gyroscope-', names(dataset_mean_std))
 names(dataset_mean_std) <- gsub('Mag', 'Magnitude-', names(dataset_mean_std))
-names(dataset_mean_std) <- gsub('Freq[(][)]', 'Frequency', names(dataset_mean_std))
 names(dataset_mean_std) <- gsub("BodyBody", "Body", names(dataset_mean_std))
 names(dataset_mean_std) <- gsub('-mean([(][)])?', 'Mean', names(dataset_mean_std))
 names(dataset_mean_std) <- gsub('-std[(][)]', 'StandardDeviation', names(dataset_mean_std))
@@ -65,9 +64,9 @@ names(dataset_mean_std) <- gsub('-std[(][)]', 'StandardDeviation', names(dataset
 
 message('5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable')
 message('   for each activity and each subject.')
-dataset_tidy <- aggregate(dataset_mean_std[,3:81], by=list(activity=dataset_mean_std$activity, subject=dataset_mean_std$subject), FUN = mean)
+dataset_tidy <- aggregate(dataset_mean_std[,3:68], by=list(activity=dataset_mean_std$activity, subject=dataset_mean_std$subject), FUN = mean)
 #Swap column order : activity and subject
-dataset_tidy <- dataset_tidy[c(names(dataset_tidy[,2:1]), names(dataset_tidy[,3:81]))]
+dataset_tidy <- dataset_tidy[c(names(dataset_tidy[,2:1]), names(dataset_tidy[,3:68]))]
 
 write.table(dataset_tidy, './dataset_tidy.txt', sep=',', row.names = FALSE)
 
