@@ -171,5 +171,6 @@ The structure of 'dataset_tidy' looks like:
      $ Time-BodyAcceleration-JerkStandardDeviation-Y                   : num  -0.924 -0.981 -0.986 0.067 -0.102 ...
      
 The result is written to 'dataset_tidy.csv' file as output.
+
     write.csv(dataset_tidy, './dataset_tidy.csv')
     
