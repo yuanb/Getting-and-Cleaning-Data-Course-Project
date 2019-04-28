@@ -4,7 +4,7 @@ Source code : run_analysis.R
 
 ### Dataset ###
 
-[Project dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ### Dataset description ###
 
