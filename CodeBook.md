@@ -227,9 +227,9 @@ Our dataset looks like this now:
 
 We now have our dataset ready to do some calculations. We use 'aggregate' function here to split data into subsets, apply 'mean' to the summary returned from aggregate result. For better understanding, I also switched the column order of 'subject' and 'activity'. We name the result of this step as 'dataset_tidy'.
 
-    dataset_tidy <- aggregate(dataset_mean_std[,3:81], by=list(activity=dataset_mean_std$activity, subject=dataset_mean_std$subject), FUN = mean)
+    dataset_tidy <- aggregate(dataset_mean_std[,3:68], by=list(activity=dataset_mean_std$activity, subject=dataset_mean_std$subject), FUN = mean)
     #Swap column order : activity and subject
-    dataset_tidy <- dataset_tidy[c(names(dataset_tidy[,2:1]), names(dataset_tidy[,3:81]))]
+    dataset_tidy <- dataset_tidy[c(names(dataset_tidy[,2:1]), names(dataset_tidy[,3:68]))]
 
 The structure of 'dataset_tidy' looks like:
 
