@@ -174,6 +174,10 @@ The result is written to 'dataset_tidy.csv' file as output.
 
     write.csv(dataset_tidy, './dataset_tidy.csv')
     
-Here is a picture of dataset_tidy
+The dataset_tidy contains 180 rows and 81 columns.
 
-![Screenshot of dataset_tidy](dataset_tidy.png)
+Thanks
+
+
+
+
