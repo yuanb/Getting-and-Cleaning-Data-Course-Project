@@ -75,13 +75,9 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 "FrequencyDomain-BodyAcceleration-StandardDeviation-X","FrequencyDomain-BodyAcceleration-StandardDeviation-Y","FrequencyDomain-BodyAcceleration-StandardDeviation-Z",
 
-"FrequencyDomain-BodyAcceleration-MeanFrequency-X","FrequencyDomain-BodyAcceleration-MeanFrequency-Y","FrequencyDomain-BodyAcceleration-MeanFrequency-Z",
-
 "FrequencyDomain-BodyAcceleration-JerkMean-X","FrequencyDomain-BodyAcceleration-JerkMean-Y","FrequencyDomain-BodyAcceleration-JerkMean-Z",
 
 "FrequencyDomain-BodyAcceleration-JerkStandardDeviation-X","FrequencyDomain-BodyAcceleration-JerkStandardDeviation-Y","FrequencyDomain-BodyAcceleration-JerkStandardDeviation-Z",
-
-"FrequencyDomain-BodyAcceleration-JerkMeanFrequency-X","FrequencyDomain-BodyAcceleration-JerkMeanFrequency-Y","FrequencyDomain-BodyAcceleration-JerkMeanFrequency-Z",
 
 "FrequencyDomain-BodyGyroscope-Mean-X","FrequencyDomain-BodyGyroscope-Mean-Y","FrequencyDomain-BodyGyroscope-Mean-Z",
 
@@ -89,18 +85,15 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 "FrequencyDomain-BodyGyroscope-StandardDeviation-X","FrequencyDomain-BodyGyroscope-StandardDeviation-Y","FrequencyDomain-BodyGyroscope-StandardDeviation-Z",
 
-"FrequencyDomain-BodyGyroscope-MeanFrequency-X","FrequencyDomain-BodyGyroscope-MeanFrequency-Y","FrequencyDomain-BodyGyroscope-MeanFrequency-Z",
-
 ##### Magnitude: #####
 
-"FrequencyDomain-BodyAcceleration-Magnitude-Mean","FrequencyDomain-BodyAcceleration-Magnitude-StandardDeviation","FrequencyDomain-BodyAcceleration-Magnitude-MeanFrequency",
+"FrequencyDomain-BodyAcceleration-Magnitude-Mean","FrequencyDomain-BodyAcceleration-Magnitude-StandardDeviation"
 
-"FrequencyDomain-BodyAcceleration-JerkMagnitude-Mean","FrequencyDomain-BodyAcceleration-JerkMagnitude-StandardDeviation","FrequencyDomain-BodyAcceleration-JerkMagnitude-MeanFrequency,
+"FrequencyDomain-BodyAcceleration-JerkMagnitude-Mean","FrequencyDomain-BodyAcceleration-JerkMagnitude-StandardDeviation"
 
-"FrequencyDomain-BodyGyroscope-Magnitude-Mean","FrequencyDomain-BodyGyroscope-Magnitude-StandardDeviation","FrequencyDomain-BodyGyroscope-Magnitude-MeanFrequency",
+"FrequencyDomain-BodyGyroscope-Magnitude-Mean","FrequencyDomain-BodyGyroscope-Magnitude-StandardDeviation"
 
-"FrequencyDomain-BodyGyroscope-JerkMagnitude-Mean","FrequencyDomain-BodyGyroscope-JerkMagnitude-StandardDeviation","FrequencyDomain-BodyGyroscope-JerkMagnitude-MeanFrequency"
-
+"FrequencyDomain-BodyGyroscope-JerkMagnitude-Mean","FrequencyDomain-BodyGyroscope-JerkMagnitude-StandardDeviation"
 
 ## The following are steps performed in run_analysis.R script ##
 
