@@ -174,3 +174,6 @@ The result is written to 'dataset_tidy.csv' file as output.
 
     write.csv(dataset_tidy, './dataset_tidy.csv')
     
+Here is a picture of dataset_tidy
+
+![Screenshot of dataset_tidy](dataset_tidy.png)
